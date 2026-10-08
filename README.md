@@ -1,5 +1,11 @@
 # AEraLogIn — Agent Execution, Runtime Authorization & Logging Infrastructure
 
+
+> [!IMPORTANT]
+> **Frozen public reference implementation.** This repository preserves a historical source snapshot and is **not** the current AEraLogIn development branch or a production-security certification. Some behavior, tests and dependency versions reflect older architecture. Do not deploy it with real credentials or rely on it for sensitive tasks without independent security review. The complete historical Git content and external integrations have not yet been independently cleared by this documentation update.
+>
+> **Current project direction:** [Public development roadmap](https://github.com/AEraLogIn/.github/blob/main/ROADMAP.md) · [Organization](https://github.com/AEraLogIn) · [Security policy](SECURITY.md)
+
 AEraLogIn is an open-source authorization and interoperability layer for autonomous agents, their execution runtimes, and agent-to-agent communication.
 
 > **A2A-first architecture. Human Identity is an ownership and bootstrap layer — not the center of execution authorization.**
@@ -136,13 +142,11 @@ Human Login remains supported, but it is no longer the architectural center of g
 
 ## Repository status
 
-This branch contains the **A2A-first reorientation** of the public reference repository.
-
-The original `main` branch remains preserved as the frozen reference snapshot. This branch intentionally changes the project narrative and development direction without rewriting the historical reference state.
+This repository preserves a historical, A2A-oriented public reference. Its source code, historical roadmap and test instructions describe that snapshot, not the current private development status. For up-to-date public priorities and status distinctions, use the [organization roadmap](https://github.com/AEraLogIn/.github/blob/main/ROADMAP.md).
 
 ## Testing
 
-Run the standard suite with:
+For local historical reference testing, the documented command is (results have **not** been independently rerun as part of this documentation update):
 
 ~~~bash
 python -m pytest tests/ -q
